@@ -1,8 +1,11 @@
 body {
     margin: 0;
+    padding: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+
+/* Generic Styling */
 
 h1 {
     margin: 50px auto 0 auto;
@@ -38,64 +41,23 @@ hr {
     margin: 100px auto;
 }
 
-.topContainer {
-    background-color: #EAF6F6;
-    padding-top: 100px;
-    position: relative;
-    height: 100vh;
-}
+/* Top Container */
 
-.middle-container {
-    margin: 100px 0;
-}
-
-.middle-container img {
+.top-container img {
     border-radius: 50%;
 }
 
-.intro {
-    width: 30%;
-    margin: 0 auto;
-}
-
-
-.bottom-container {
-    background-color: #66BFBF;
-    padding: 50px 0 20px;
+.profile {
+    background: cornflowerblue;
+    padding: 100px;
     color: white;
 }
 
-.bottom-container a {
-    color: #11999E;
-    text-decoration: none;
-    margin: 20px 30px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.bottom-container p {
-    margin-top: 30px;
-}
-
-.bottom-container a:hover {
+.profile h2 {
     color: white;
 }
 
-span {
-    color: cornflowerblue;
-    text-decoration: underline;
-}
-
-.bottom-cloud {
-    position: absolute;
-    right: 35%;
-    top: 8%;
-}
-
-.top-cloud {
-    position: absolute;
-    bottom: 42%;
-    left: 32%;
-}
+/*Skills Sections */
 
 .skill-row {
     width: 50%;
@@ -104,7 +66,7 @@ span {
 }
 
 .skill-row img {
-    width: 25%;
+    width: 20%;
     border-radius: 50%;
 }
 
@@ -117,6 +79,34 @@ span {
     float: right;
     margin-left: 30px;
 }
+
+/* Projects Sections */
+
+.middle-container {
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+
+.middle-container h2 {
+    color: white;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+.projects .card {
+    margin: 20px 50px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Contact Section */
 
 .btn {
     background: #41f0f0;
@@ -145,8 +135,38 @@ span {
     text-decoration: none;
 }
 
+/* Footer */
+
+.bottom-container {
+    background-color: cornflowerblue;
+    padding: 50px 0 20px;
+    color: white;
+}
+
+.bottom-container a {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottom-container p {
+    margin-top: 30px;
+}
+
+.bottom-container a:hover {
+    color: white;
+}
+
+span {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
 .contact-me {
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-msg {
