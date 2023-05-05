@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!--This is a comment-->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Beth McGuire Portfolio</title>
+    <title>Beth's Personal Site</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +18,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="top-container">
-        <div class="profile">
+        <div class="profile" id="about">
             <img src="img/0.jpg" alt="">
             <h2>Beth McGuire - About Me</h2>
             <p class="intro">I'm graduating University May 12, 2023 and made the Dean's list, hooray! In school, I took
@@ -34,7 +43,7 @@
                 will be in Japan for a month in May! This... will clearly be edited after May!</p>
         </div>
         <hr>
-        <div class="skills">
+        <div class="skills" id="skills">
             <h2>My Skills.</h2>
             <div class="skill-row">
                 <img class="other-img" src="img/code-flat.png" alt="">
@@ -50,56 +59,72 @@
             <div class="skill-row">
                 <img class="rndm-img" src="img/computer.png" alt="">
                 <h3>Back-end Development</h3>
-                <p>Through University, I took quite a few courses where I learned beginner and intermediate Python, PHP,
-                    and SQL. I've made a couple projects with Codeigniter and PHP and have also learned through Udemy
-                    how to incorporate Node.JS, MongoDB, and Mongoose into working projects!</p>
+                <p>Through University, I took quite a few courses where I learned beginner and intermediate Python,
+                    and SQL. I've learned through Udemy
+                    how to incorporate Node.JS, MongoDB, and Mongoose into working projects and am currently doing my
+                    best to learn PHP!</p>
             </div>
         </div>
         <hr>
-        <div class="middle-container">
+        <div class="middle-container" id="projects">
             <h2>PROJECTS</h2>
             <div class="projects">
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/hangman.jpg" alt="Hangman">
+                    <h3>Hangman</h3>
+                    <a href="https://jovial-banoffee-ecdd03.netlify.app/" target="_blank">React Hangman</a>
+                    <p>Coded in React, user clicks on letters to make a guess and after enough guesses, you lose and
+                        have to try again. Will eventually work to implement keyboard input as well.</p>
                 </div>
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/swipe.jpg" alt="Swipe Project">
+                    <h3>Swipe Project</h3>
+                    <a href="https://prismatic-parfait-3e66c6.netlify.app/" target="_blank">Mega SWIPE</a>
+                    <p>Made using HTML/CSS and only using JS for the gradient, this huge site required a lot of
+                        different techniques including grid, flexbox, responsive design, and common layouts for footers.
+                    </p>
                 </div>
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/simon.jpg" alt="simon says">
+                    <h3>Simon Says</h3>
+                    <a href="https://incandescent-malabi-cb6013.netlify.app/" target="_blank">Simon Says Link</a>
+                    <p>This project utilized HTML/CSS and JS to create a game similar to what we played as children. You
+                        memorize the patterns and when you finally can't remember, the game is over and clicking any
+                        key, you can play again. A <em>lot</em> of JS functions and event listeners were utilized in
+                        this project.</p>
                 </div>
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/todos.jpg" alt="To Do Image">
+                    <h3>To Do List</h3>
+                    <a href="https://cute-todos.netlify.app/" target="_blank">To Do List Project</a>
+                    <p>This project utilized HTML/CSS/JS and JSON. To Do items are stored to your computers memory and
+                        has filters to filter through your list, as well as check off the boxes and hide those you
+                        completed. Deleting is also an option too! Although more simplistic than the others, this was
+                        one of my favorites to work on.</p>
                 </div>
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/pokedex.jpg" alt="Pokemon IMG">
+                    <h3>Pokedex Project</h3>
+                    <a href="https://distracted-sammet-227306.netlify.app/" target="_blank">Gotta Catch 'em All</a>
+                    <p>A basic React project making cards that contain Pokemon sprites. Utilized front-end development
+                        inside of React to make a clean looking project. Eventually will update to have even more
+                        Pokemon and a flipping effect that displays more information.</p>
                 </div>
                 <div class="card">
-                    <img src="img/code-flat.png" alt="">
-                    <h3>Project Name</h3>
-                    <a href="#">Link</a>
-                    <p>Project Description</p>
+                    <img src="img/budget.jpg" alt="Budget IMG">
+                    <h3>Budget Application</h3>
+                    <a href="https://beth-budget-app.netlify.app/" target="_blank">Budgeting Project</a>
+                    <p>Another front-end project (can you see my passions?!) that uses HTML/CSS/JS/JSON since memory is
+                        stored on your computer. Inputs are used for adding description to income and expenses, and you
+                        can pick which one to use. You then hit the button which adds it, does the math, and shows your
+                        available budget up top. Income is green and expenses are red. This was one of my earliest
+                        projects.</p>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <div class="contact-me">
+    <div class="contact-me" id="contact">
         <h2>Let's Get In Touch</h2>
         <h3>I reply within 12 hours!</h3>
         <p class="contact-msg">Shoot me an email about my projects, freelance opportunities, or even to talk about
